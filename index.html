@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JF Móveis | Montagem e Desmontagem em Cascavel</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #F5F5F5; 
+            color: #333; 
+        }
+
+        /* MENU FIXO NO TOPO */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8); /* Fundo transparente escuro */
+            z-index: 1000;
+            border-bottom: 2px solid #8B4513; /* Marrom da madeira */
+        }
+
+        .logo { 
+            font-family: 'Oswald', sans-serif; 
+            font-size: 24px; 
+            font-weight: 700; 
+            color: #fff; 
+            letter-spacing: 2px; 
+        }
+        .logo span { color: #D4AF37; } /* Dourado/Latão */
+
+        nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-size: 14px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            transition: 0.3s;
+        }
+        nav a:hover { color: #D4AF37; }
+
+        /* HERO SECTION (A FOTO GRANDE) */
+        .hero {
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; 
+            padding: 0 10%;
+            /* Imagem de fundo de móveis planejados modernos */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 70px; 
+            line-height: 1.1;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            max-width: 700px;
+        }
+
+        .hero p { 
+            font-size: 18px; 
+            margin-bottom: 40px; 
+            max-width: 500px; 
+            color: #ddd; 
+        }
+
+        .btn-principal {
+            background-color: #8B4513; /* Marrom */
+            color: #fff;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: 2px solid #8B4513;
+        }
+
+        .btn-principal:hover { 
+            background-color: transparent; 
+            color: #8B4513;
+            background-color: #D4AF37; 
+            border-color: #D4AF37;
+            color: #000;
+            transform: scale(1.05); 
+        }
+
+        /* SEÇÃO DE SERVIÇOS */
+        .section { 
+            padding: 100px 10%; 
+            background-color: #fff; 
+            text-align: center; 
+        }
+        
+        .section-title {
+            font-family: 'Oswald', sans-serif; 
+            font-size: 40px; 
+            margin-bottom: 20px; 
+            color: #8B4513; 
+            text-transform: uppercase; 
+        }
+        
+        .section-subtitle {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grid-servicos { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+        }
+        
+        .card {
+            background: #F9F9F9;
+            padding: 40px 30px;
+            border-radius: 10px;
+            border-bottom: 5px solid #8B4513;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        
+        .card h3 { 
+            font-family: 'Oswald', sans-serif;
+            font-size: 24px; 
+            margin-bottom: 15px; 
+            color: #333;
+        }
+        .card p { color: #666; font-size: 15px; line-height: 1.6; }
+
+        /* RODAPÉ */
+        footer { 
+            text-align: center; 
+            padding: 40px 20px; 
+            background: #222; 
+            color: #aaa; 
+            font-size: 14px; 
+        }
+
+        footer p { margin-bottom: 8px; }
+
+        /* RESPONSIVIDADE PARA CELULAR */
+        @media (max-width: 768px) {
+            header { padding: 15px 20px; }
+            .hero h1 { font-size: 45px; }
+            nav { display: none; } 
+            .hero { padding: 0 5%; align-items: center; text-align: center; }
+            .btn-principal { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">JF <span>MÓVEIS</span></div>
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sua casa pronta <br> sem estresse.</h1>
+        <p>Montagem e desmontagem de móveis com garantia, agilidade e acabamento perfeito em Cascavel e região.</p>
+        <a href="https://wa.me/5545999910207" class="btn-principal" target="_blank">Solicitar Orçamento</a>
+    </section>
+
+    <section class="section" id="servicos">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">Cuidamos do seu móvel do início ao fim, com profissionais especializados e total segurança.</p>
+        
+        <div class="grid-servicos">
+            <div class="card">
+                <h3>🛠️ Montagem e Desmontagem</h3>
+                <p>Móveis novos, usados, convencionais ou planejados. Montamos tudo com cuidado para não danificar as peças.</p>
+            </div>
+            <div class="card">
+                <h3>🪚 Móveis Planejados</h3>
+                <p>Instalação especializada em Metalon e MDF. Garantimos que o seu projeto saia exatamente como o planejado.</p>
+            </div>
+            <div class="card">
+                <h3>🏠 Mudança sem Dor de Cabeça</h3>
+                <p>Desmontamos, transportamos e montamos novamente na sua nova casa. Praticidade total para você.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2024 JF Móveis. Todos os direitos reservados.</p>
+        <p>📍 Cascavel - PR</p>
+        <p>📞 Atendimento: (45) 99991-0207</p>
+    </footer>
+</body>
+</html>
